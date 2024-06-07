@@ -11,8 +11,8 @@ with io.open("requirements.txt", 'r') as f:
 
 setup(
     name='pykafka_util',
-    version='1.0.0',
-    description='kafka防撞',
+    version='1.0.1',
+    description='kafka封装',
     author='buyfakett',
     author_email='buyfakett@vip.qq.com',
     license='MIT',
