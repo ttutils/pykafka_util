@@ -2,6 +2,8 @@
 
 - pykafka_util.py
 
+kafka封装
+
 ```python
 from pykafka_util.pykafka_util import KafkaManager
 kafka_host = f'127.0.0.1:9094'
@@ -21,7 +23,7 @@ v = bytes('{}'.format(json.dumps(message)), 'utf-8')
 manager.produce(topic=topic, value=v)
 
 # 消费消息
-    consumed_messages = manager.consume(topic=topic, group_id=consumer, num_messages=10)
-    for data in consumed_messages:
-        logging.info(f"消费数据：{data}")
+consumed_messages = manager.consume(topic=topic, group_id=consumer, num_messages=10)
+for data in consumed_messages:
+    logging.info(f"消费数据：{data}")
 ```
